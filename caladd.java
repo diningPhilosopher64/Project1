@@ -13,7 +13,11 @@ public class caladd {
         do {
 
             System.out.println("1. Add two numbers \n");
+
             System.out.println("2. Multiply 2 numbers two numbers \n");
+
+            System.out.println("3. Subtract two numbers \n");
+
 
             System.out.println("9. Exit \n\n");
             System.out.println("Enter your choice :");
@@ -29,10 +33,18 @@ public class caladd {
                             System.out.println("Result is " + res);
                             break;
 
+
                 case '2':   System.out.println("Enter two numbers");
                             a = scanner.nextFloat();
                             b = scanner.nextFloat();
                             res = a * b;
+
+
+                 case '3':   System.out.println("Enter two numbers");
+                            a = scanner.nextFloat();
+                            b = scanner.nextFloat();
+                            res = a - b;
+
                             System.out.println("Result is " + res);
                             break;
 
