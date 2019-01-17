@@ -13,7 +13,9 @@ public class caladd {
         do {
 
             System.out.println("1. Add two numbers \n");
-            System.out.println("2. Exit \n\n");
+            System.out.println("3. Subtract two numbers \n");
+
+            System.out.println("9. Exit \n\n");
             System.out.println("Enter your choice :");
 
             choice = scanner.next().charAt(0);
@@ -27,7 +29,15 @@ public class caladd {
                             System.out.println("Result is " + res);
                             break;
 
-                case '2' : System.exit(0);
+
+                 case '3':   System.out.println("Enter two numbers");
+                            a = scanner.nextFloat();
+                            b = scanner.nextFloat();
+                            res = a - b;
+                            System.out.println("Result is " + res);
+                            break;
+
+                case '9' : System.exit(0);
                            break;
 
 
@@ -40,7 +50,7 @@ public class caladd {
 
 
 
-        }while (choice != 2);
+        }while (choice != 9);
 
     }
 }
